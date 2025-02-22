@@ -11,5 +11,7 @@
 9. `docker exec -it postgres17 createdb --username=root --owner=root desk_booking`
 10. `docker exec -it postgres17 psql -U root desk_booking`
 11. `docker exec -it postgres17 dropdb desk_booking`
-12. `migrate -path db/migration -database "postgresql://root:Batman@localhost:5432/desk_booking?sslmode=disable" -verbose up`
-13. `migrate -path db/migration -database "postgresql://root:Batman@localhost:5432/desk_booking?sslmode=disable" -verbose down`
+12. `brew install golang-migrate`
+13. `migrate -path db/migration -database "postgresql://root:Batman@localhost:5432/desk_booking?sslmode=disable" -verbose up`
+14. `migrate -path db/migration -database "postgresql://root:Batman@localhost:5432/desk_booking?sslmode=disable" -verbose down`
+15. `brew install sqlc` or `go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest`
