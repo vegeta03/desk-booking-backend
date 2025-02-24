@@ -9,6 +9,7 @@ sql:
         package: "db"
         out: "./db/sqlc"
         sql_package: "pgx/v5"
+        sql_driver: "github.com/jackc/pgx/v5"
         emit_json_tags: true
         emit_interface: false
         emit_prepared_queries: false
